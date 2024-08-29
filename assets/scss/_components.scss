@@ -1,0 +1,31 @@
+.rounded-card {
+  position: relative;
+  border-radius: 20px 0;
+  margin-top: 24px;
+  cursor: pointer;
+  img {
+    width: 100%;
+    border-radius: 20px 0;
+  }
+  h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  &:hover .rounded-card-filter {
+    position: absolute;
+    border-radius: 20px 0;
+    background: $gray-600;
+    opacity: 40%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.accent-btn-hover:hover {
+  background: $accent-300;
+}

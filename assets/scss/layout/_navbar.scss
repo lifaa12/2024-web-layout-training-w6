@@ -1,0 +1,21 @@
+nav {
+  .container-xl {
+    border-bottom: 1px solid $gray-300;
+    @include mobile {
+      border: 0;
+    }
+  }
+  .nav-search {
+    padding: 12px 20px;
+    width: 276px;
+    @include mobile {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+  .nav-search-btn {
+    i {
+      font-size: 20px;
+    }
+  }
+}

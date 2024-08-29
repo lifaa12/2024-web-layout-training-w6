@@ -1,0 +1,138 @@
+.index-banner {
+  height: 621px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner.png?raw=true");
+  &__text {
+    margin-left: 60px;
+  }
+  @include mobile {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024-week6/banner-sm.png?raw=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__text {
+      margin-left: 0;
+    }
+  }
+}
+.switcher {
+  gap: 20px;
+  > button {
+    padding: 4px 16px;
+    border-color: #6c757d;
+    color: #6c757d;
+    &:hover {
+      background: #6c757d;
+      color: #fff;
+      border-color: #6c757d;
+    }
+  }
+}
+.switcher-line {
+  width: 80px;
+  height: 1px;
+  background: #6c757d;
+}
+.index-feature-article__md {
+  overflow-x: auto;
+  white-space: nowrap;
+  .card {
+    width: 324px;
+  }
+  p {
+    white-space: normal;
+  }
+}
+.index-event__title {
+  @include mobile {
+    color: $accent-200 !important;
+  }
+}
+.index-host {
+  padding: 62px 56px 64px 56px;
+  @include mobile {
+    padding: 48px 0;
+  }
+  > h2 {
+    margin-bottom: 40px;
+  }
+  .nav {
+    i {
+      font-size: 20px;
+      vertical-align: middle;
+    }
+    .active {
+      background: $accent-100;
+    }
+    .nav-link {
+      border-radius: 4px;
+      &:hover {
+        color: $accent-200 !important;
+      }
+    }
+  }
+  .host-container {
+    max-width: 855px;
+  }
+  .img-rounded-xl-start {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .img-rounded-xl-end {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20 px;
+  }
+  &__badge > span {
+    cursor: pointer;
+    &:hover {
+      color: #fff !important;
+      background: $primary-400 !important;
+    }
+  }
+  &__md {
+    overflow-x: auto;
+    white-space: nowrap;
+    .card {
+      width: 324px;
+    }
+    .badge {
+      margin-right: 10px;
+    }
+  }
+}
+.index-life {
+  .card-title {
+    font-size: 52px;
+  }
+}
+.index-subscribe-card {
+  cursor: pointer;
+  @include mobile {
+    width: 306px;
+  }
+  img {
+    width: 100%;
+  }
+  .badge {
+    left: 16px;
+  }
+  &__footer {
+    background: linear-gradient(#21252905, #21252999);
+    padding: 0 12px;
+  }
+  &:hover &__filter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: $gray-600;
+    opacity: 40%;
+  }
+}
+.index-subscribe__md {
+  overflow-x: auto;
+  white-space: nowrap;
+}
